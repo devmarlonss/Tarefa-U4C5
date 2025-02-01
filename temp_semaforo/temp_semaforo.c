@@ -60,6 +60,7 @@ int main() {
     add_repeating_timer_ms(3000, repeating_timer_callback, NULL, &timer); // temporizador chama a função de callback a cada 3 segundos
 
     while (true) {
-
+        printf("1 segundo\n");
+        sleep_ms(1000);
     }
 }
