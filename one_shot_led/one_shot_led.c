@@ -22,8 +22,8 @@ int64_t turn_off_callback(alarm_id_t id, void *user_data) {
     } else if (gpio_get(LED_PIN_R)) {
         gpio_put(LED_PIN_R, 0); // Desativa o led vermelho
         printf("Red led off\n");
-        printf("All leds off\n");
         all_leds_active = false; // Indica que todos os leds estão apagados
+        printf("All leds off\n");
         return 0; // retorna 0 para que o alarme não se repita
     }
 
